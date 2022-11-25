@@ -1,0 +1,119 @@
+.client__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #ededf1;
+}
+
+.client__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.client__container-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    text-transform: uppercase;
+    border: 2px solid #ededf1;
+    border-radius: 5px;
+    padding: 1rem;
+    color: #ededf1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.client__container-link:hover {
+    background-color: #ededf1;
+    color: #1e1e1e;
+}
+
+.client__container-title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.client__container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.client__container-video {
+    width: 60%;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+.client__container-text {
+    margin: 3rem;
+    text-align: center;
+    & p {
+        text-align: left;
+        overflow: scroll;
+        max-height: 300px;
+        max-width: 600px;
+        margin-top: 2rem;
+        white-space: pre-wrap;
+    }
+}
+
+.client__container-tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.client__container-tasks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.client__container-tasks-list-item-container {
+    margin-bottom: 30px;
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.client__container-tasks-list-item-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.client__container-tasks-list-item-text {
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+    margin-bottom: 20px
+}
+
+.client__container-tasks-list-item-sub {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ff8989;
+}
